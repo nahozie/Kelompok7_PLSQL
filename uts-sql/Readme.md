@@ -1,8 +1,4 @@
 Kelompok 7
-Ketua : Fajar Satria
-Member : Firhan Fakhrurrozi
-Member Tidak Aktif : Gigih Rahardiyansyah, Feryan dhimas aditya
-
 
 # nama aplikasi
 Aplikasi Login Employee dan Manajemen User

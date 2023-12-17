@@ -1,9 +1,59 @@
+Kelompok 7
+Ketua : Fajar Satria
+Member : Firhan Fakhrurrozi
+Member Tidak Aktif : Gigih Rahardiyansyah, Feryan dhimas aditya
+
 
 # nama aplikasi
+Aplikasi Login Employee dan Manajemen User
 
-Deskrpsi applikasi
+# Deskrpsi applikasi
 
-## How to Run
+Aplikasi Microservice Login dan Manajemen USER
+di dalam aplikasi terdapat sistem CRUD / Create, Read, Update, Delete
+
+## Login
+terdapat dua inputan yang dimasukkan yakni :
+Username dan Password
+
+## Manajemen User
+Terdapat enam inputan yakni :
+- username
+- password
+- first_name
+- last_name
+- gender
+- status
+
+## Create User
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT, 
+    username VARCHAR(80) NOT NULL UNIQUE,
+    password VARCHAR(256) NOT NULL, 
+    first_name VARCHAR(25) NOT NULL,
+    last_name VARCHAR(35) NOT NULL,
+    gender CHAR(15), NOT NULL,
+    status VARCHAR(15) NOT NULL 
+);
+
+## Update User
+UPDATE users
+SET 
+    first_name = 'NewFirstName',
+    last_name = 'NewLastName',
+    gender = 'NewGender',
+    status = 'NewStatus'
+WHERE
+    username = 'existing_username';
+
+## Read User
+SELECT * FROM users;
+
+# Delete User
+DELETE FROM users WHERE username = 'username_to_delete';
+
+
+## Langkah-Langkah Running Aplikasi
 
 1. Setelah clone projek dan membukanya
 2. Buat Database dengan nama db_employee

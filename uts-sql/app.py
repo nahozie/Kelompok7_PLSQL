@@ -1,8 +1,3 @@
-# Kelompok 7
-# Ketua : Fajar Satria
-# Member : Firhan Fakhrurrozi
-# Member Tidak Aktif : Gigih Rahardiyansyah, Feryan dhimas aditya
-
 from sqlalchemy.exc import IntegrityError
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
